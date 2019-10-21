@@ -1,3 +1,18 @@
+
+
+:root {
+    --fz-title-section: 40px; /* Название блока section */
+    --fz-name-project: 35px; /* Имя проекта в портфолио */
+    --fz-category-project: 30px; /* Категория проекта в портфолио, например "Создание веб-сайта" */
+    --fz35: 35px;
+}
+
+
+
+
+
+
+
 /*-----------------------------FONTS-----------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,700i&display=swap');
@@ -14,13 +29,20 @@ body {
     color: #161616;
 }
 
+section {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
 
   .container {
     width: 100%;
-    max-width: 1170px;
-    margin: 0 auto 30px;
-    /*padding-left: 15px;*/
-    /*padding-right: 15px;*/
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
   .row {
@@ -96,7 +118,7 @@ body {
                 padding-top: 100px;
                 padding-bottom: 35px;
 
-                font-size: 40px;
+                font-size: var(--fz-title-section);
                 font-weight: 700;
                 letter-spacing: 0.48px;
             }
@@ -139,5 +161,88 @@ body {
 
 
 
+/*-----------------------------PORTFOLIO-----------------------------*/
+
+.portfolio {
+
+}
+
+    .portfolio .title {
+        padding-top: 75px;
+        padding-bottom: 80px;
+
+        text-align: center;
+        font-size: var(--fz-title-section);
+    }
+
+    .portfolio .item-project {
+        margin-bottom: 135px;
+    }
+
+        .portfolio .item-project img {
+            width: 100%;
+        }
+
+            .portfolio .item-project .wrap-info {
+                padding-left: 25px;
+            }
+
+                .portfolio .item-project .wrap-info h3 {
+                    padding-top: 25px;
+                    padding-bottom: 30px;
+
+                    font-size: var(--fz-title-section);
+                    font-weight: 700;
+                    line-height: 45px;
+                    letter-spacing: 0.41px;
+                }
+
+                .portfolio .item-project .wrap-info p {
+                    padding-bottom: 25px;
+
+                    font-size: var(--fz-category-project);
+                    font-weight: 300;
+                    line-height: 45px;
+                    letter-spacing: 0.34px;
+                }
+
+                .portfolio .item-project .wrap-info a {
+                    font-size: 16px;
+                    font-style: italic;
+                    font-weight: 300;
+                    letter-spacing: 0.19px;
+                    color: #969696;
+                }
+
+                    .portfolio .item-project .wrap-info a:hover,
+                    .portfolio .item-project .wrap-info a:focus {
+                        color: #cc2c60;
+                    }
 
 
+
+
+.footer {
+
+}
+
+    .footer .title {
+        font-size: var(--fz-title-section);
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    .footer p {
+        padding-top: 35px;
+        padding-bottom: 95px;
+
+        font-size: var(--fz35);
+        font-weight: 200;
+        letter-spacing: 0.43px;
+
+    }
+
+        .footer p>span {
+            color: #4298e8;
+            text-decoration: underline;
+        }
