@@ -5,6 +5,7 @@
     --fz-name-project: 35px; /* Имя проекта в портфолио */
     --fz-category-project: 30px; /* Категория проекта в портфолио, например "Создание веб-сайта" */
     --fz35: 35px;
+    --fz30: 30px;
 }
 
 
@@ -67,7 +68,7 @@ a {
         padding-top: 60px;
         padding-bottom: 60px;
 
-        font-size: 42px;
+        font-size: var(--fz-title-section);
         letter-spacing: 0.5px;
         font-weight: 700;
     }
@@ -75,7 +76,7 @@ a {
     .header p {
         padding-bottom: 25px;
 
-        font-size: 36px;
+        font-size: var(--fz35);
         font-weight: 300;
         letter-spacing: 0.43px;
     }
@@ -124,7 +125,7 @@ a {
             }
 
             .about .col .block1 p {
-                font-size: 28px;
+                font-size: var(--fz30);
                 font-weight: 300;
                 line-height: 45px;
                 letter-spacing: 0.34px;
@@ -146,7 +147,7 @@ a {
             }
 
             .about .col .block2 ul li {
-                font-size: 30px;
+                font-size: var(--fz30);
                 font-weight: 300;
                 letter-spacing: 0.34px;
             }
